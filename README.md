@@ -4,7 +4,8 @@ A Python program that reports macOS screen lock/unlock events and system shutdow
 
 ## Installation
 
-1. Install dependencies:
+Checkout the repo and install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -22,8 +23,9 @@ Set these environment variables:
 ## Usage
 
 ```bash
-export MQTT_BROKER=your-mqtt-broker.my-tailnet.ts.net
-python3 screenlock_mqtt.py
+MQTT_BROKER=your-mqtt-broker.my-tailnet.ts.net \
+MQTT_TOPIC=mycomputer/screenlock \
+  python3 screenlock_mqtt.py
 ```
 
 ## Running as a Service
@@ -37,7 +39,7 @@ launchctl load ~/Library/LaunchAgents/com.user.screenlock-mqtt.plist
 
 # License
 
-MIT; see [LICENSE] in this repo.
+MIT; see [LICENSE](LICENSE) in this repo.
 
 # Author
 
