@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.screenlock-mqtt</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/path/to/checkout/venv/python3</string>
+        <string>/path/to/screenlock_mqtt.py</string>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>MQTT_BROKER</key>
+        <string>your-mqtt-broker.com</string>
+        <key>MQTT_PORT</key>
+        <string>1883</string>
+        <key>MQTT_TOPIC</key>
+        <string>macos/screenlock</string>
+        <key>MQTT_USERNAME</key>
+        <string>your-username</string>
+        <key>MQTT_PASSWORD</key>
+        <string>your-password</string>
+    </dict>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+</dict>
+</plist>
