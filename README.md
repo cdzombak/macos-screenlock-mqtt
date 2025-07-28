@@ -44,5 +44,6 @@ MIT; see [LICENSE](LICENSE) in this repo.
 # Author
 
 Chris Dzombak
+
 - [github.com/cdzombak](https://www.github.com/cdzombak)
 - [dzombak.com](https://www.dzombak.com)
